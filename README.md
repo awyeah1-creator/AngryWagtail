@@ -2,6 +2,10 @@
 
 A modern, production-ready Flutter starter template with best practices, clean architecture, and essential features pre-configured. Perfect for quickly bootstrapping new Flutter projects with a solid foundation.
 
+## 🌐 Live Demo
+
+Check out the live demo: [https://flutter-material3-starter.web.app](https://flutter-material3-starter.web.app)
+
 ## 🚀 Features
 
 ### Core Architecture
