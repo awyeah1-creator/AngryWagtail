@@ -5,7 +5,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../widgets/onboarding_step.dart';
 import '../../../../core/router/app_router.dart';
 
-
 class OnboardingPage extends ConsumerStatefulWidget {
   const OnboardingPage({super.key});
 
@@ -19,7 +18,7 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
   
   final List<OnboardingStepData> _steps = [
     OnboardingStepData(
-      title: 'Welcome to Flutter Starter',
+      title: 'Welcome to Angry Wagtail',
       description: 'A production-ready Flutter template with Material 3 design, '
                   'state management, and essential features to kickstart your next project.',
       image: Icons.rocket_launch,
@@ -49,10 +48,10 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
       color: Colors.orange,
     ),
     OnboardingStepData(
-      title: 'Ready-to-Use Features',
+      title: 'Ready-to-Use Wagtail Features',
       description: 'Authentication flows, user management, dashboard with charts, '
                   'notifications, search functionality, and more. Everything you need '
-                  'to start building immediately.',
+                  'to start building with Angry Wagtail immediately.',
       image: Icons.star,
       color: Colors.green,
     ),
