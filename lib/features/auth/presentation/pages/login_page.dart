@@ -49,19 +49,19 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        AppLocalizations.of(context).welcomeBack,
+                        'Welcome Back Angry Wagtail',
                         style: Theme.of(context).textTheme.headlineMedium,
                       ),
                       const SizedBox(height: 32),
                       TextFormField(
                         controller: _emailController,
                         decoration: InputDecoration(
-                          labelText: AppLocalizations.of(context).email,
+                          labelText: 'Email',
                           prefixIcon: const Icon(Icons.email_outlined),
                         ),
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return AppLocalizations.of(context).pleaseEnterEmail;
+                            return 'Please enter your email';
                           }
                           return null;
                         },
@@ -71,12 +71,12 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                         controller: _passwordController,
                         obscureText: true,
                         decoration: InputDecoration(
-                          labelText: AppLocalizations.of(context).password,
+                          labelText: 'Password',
                           prefixIcon: const Icon(Icons.lock_outline),
                         ),
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return AppLocalizations.of(context).pleaseEnterPassword;
+                            return 'Please enter your password';
                           }
                           return null;
                         },
@@ -94,13 +94,13 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                                     strokeWidth: 2,
                                   ),
                                 )
-                              : Text(AppLocalizations.of(context).login),
+                              : Text('Login to Wagtail'),
                         ),
                       ),
                       const SizedBox(height: 16),
                       TextButton(
                         onPressed: () => context.go('/register'),
-                        child: Text(AppLocalizations.of(context).createAnAccount),
+                        child: Text('Create an Angry Wagtail Account'),
                       ),
                     ],
                   ),
