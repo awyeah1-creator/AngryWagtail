@@ -59,7 +59,7 @@ class _RegisterPageState extends ConsumerState<RegisterPage> {
                         controller: _emailController,
                         decoration: InputDecoration(
                           labelText: AppLocalizations.of(context).email,
-                          prefixIcon: Icon(Icons.email_outlined),
+                          prefixIcon: const Icon(Icons.email_outlined),
                         ),
                         validator: (value) {
                           if (value == null || value.isEmpty) {
@@ -77,7 +77,7 @@ class _RegisterPageState extends ConsumerState<RegisterPage> {
                         obscureText: true,
                         decoration: InputDecoration(
                           labelText: AppLocalizations.of(context).password,
-                          prefixIcon: Icon(Icons.lock_outline),
+                          prefixIcon: const Icon(Icons.lock_outline),
                         ),
                         validator: (value) {
                           if (value == null || value.isEmpty) {
@@ -95,7 +95,7 @@ class _RegisterPageState extends ConsumerState<RegisterPage> {
                         obscureText: true,
                         decoration: InputDecoration(
                           labelText: AppLocalizations.of(context).confirmPassword,
-                          prefixIcon: Icon(Icons.lock_outline),
+                          prefixIcon: const Icon(Icons.lock_outline),
                         ),
                         validator: (value) {
                           if (value == null || value.isEmpty) {

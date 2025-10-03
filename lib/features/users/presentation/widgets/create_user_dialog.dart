@@ -53,7 +53,7 @@ class _CreateUserDialogState extends ConsumerState<CreateUserDialog> {
                 controller: _nameController,
                 decoration: InputDecoration(
                   labelText: AppLocalizations.of(context).fullName,
-                  prefixIcon: Icon(Icons.person_outline),
+                  prefixIcon: const Icon(Icons.person_outline),
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
@@ -67,7 +67,7 @@ class _CreateUserDialogState extends ConsumerState<CreateUserDialog> {
                 controller: _emailController,
                 decoration: InputDecoration(
                   labelText: AppLocalizations.of(context).email,
-                  prefixIcon: Icon(Icons.email_outlined),
+                  prefixIcon: const Icon(Icons.email_outlined),
                 ),
                 keyboardType: TextInputType.emailAddress,
                 validator: (value) {
@@ -85,16 +85,16 @@ class _CreateUserDialogState extends ConsumerState<CreateUserDialog> {
                 controller: _phoneController,
                 decoration: InputDecoration(
                   labelText: AppLocalizations.of(context).phoneOptional,
-                  prefixIcon: Icon(Icons.phone_outlined),
+                  prefixIcon: const Icon(Icons.phone_outlined),
                 ),
                 keyboardType: TextInputType.phone,
               ),
               const SizedBox(height: 16),
               DropdownButtonFormField<String>(
-                value: _selectedRole,
+                initialValue: _selectedRole,
                 decoration: InputDecoration(
                   labelText: AppLocalizations.of(context).role,
-                  prefixIcon: Icon(Icons.badge_outlined),
+                  prefixIcon: const Icon(Icons.badge_outlined),
                 ),
                 items: _roles.map((role) {
                   return DropdownMenuItem(
@@ -110,10 +110,10 @@ class _CreateUserDialogState extends ConsumerState<CreateUserDialog> {
               ),
               const SizedBox(height: 16),
               DropdownButtonFormField<String>(
-                value: _selectedDepartment,
+                initialValue: _selectedDepartment,
                 decoration: InputDecoration(
                   labelText: AppLocalizations.of(context).department,
-                  prefixIcon: Icon(Icons.business_outlined),
+                  prefixIcon: const Icon(Icons.business_outlined),
                 ),
                 items: _departments.map((dept) {
                   return DropdownMenuItem(

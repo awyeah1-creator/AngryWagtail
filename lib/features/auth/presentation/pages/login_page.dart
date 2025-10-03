@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../providers/auth_provider.dart';
-import '../../../../l10n/app_localizations.dart';
 
 class LoginPage extends ConsumerStatefulWidget {
   const LoginPage({super.key});
@@ -55,9 +54,9 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                       const SizedBox(height: 32),
                       TextFormField(
                         controller: _emailController,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'Email',
-                          prefixIcon: const Icon(Icons.email_outlined),
+                          prefixIcon: Icon(Icons.email_outlined),
                         ),
                         validator: (value) {
                           if (value == null || value.isEmpty) {
@@ -70,9 +69,9 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                       TextFormField(
                         controller: _passwordController,
                         obscureText: true,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'Password',
-                          prefixIcon: const Icon(Icons.lock_outline),
+                          prefixIcon: Icon(Icons.lock_outline),
                         ),
                         validator: (value) {
                           if (value == null || value.isEmpty) {
@@ -94,13 +93,13 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                                     strokeWidth: 2,
                                   ),
                                 )
-                              : Text('Login to Wagtail'),
+                              : const Text('Login to Wagtail'),
                         ),
                       ),
                       const SizedBox(height: 16),
                       TextButton(
                         onPressed: () => context.go('/register'),
-                        child: Text('Create an Angry Wagtail Account'),
+                        child: const Text('Create an Angry Wagtail Account'),
                       ),
                     ],
                   ),

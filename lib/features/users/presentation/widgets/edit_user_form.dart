@@ -118,7 +118,7 @@ class _EditUserFormState extends ConsumerState<EditUserForm> {
                 ),
                 const SizedBox(height: 16),
                 DropdownButtonFormField<String>(
-                  value: _selectedRole,
+                  initialValue: _selectedRole,
                   decoration: const InputDecoration(
                     labelText: 'Role',
                     prefixIcon: Icon(Icons.badge_outlined),
@@ -137,7 +137,7 @@ class _EditUserFormState extends ConsumerState<EditUserForm> {
                 ),
                 const SizedBox(height: 16),
                 DropdownButtonFormField<String>(
-                  value: _selectedDepartment,
+                  initialValue: _selectedDepartment,
                   decoration: const InputDecoration(
                     labelText: 'Department',
                     prefixIcon: Icon(Icons.business_outlined),

@@ -107,7 +107,7 @@ class _FileUploadShowcasePageState extends State<FileUploadShowcasePage> {
               AppLocalizations.of(context).customExtensionsDescription,
               FileUploadWidget(
                 type: FileUploadType.any,
-                allowedExtensions: ['json', 'xml', 'csv'],
+                allowedExtensions: const ['json', 'xml', 'csv'],
                 hint: AppLocalizations.of(context).dropJSONXMLCSVFiles,
                 onFilesSelected: (files) {
                   _showSuccessMessage(AppLocalizations.of(context).customFileUploadedSuccessfully);

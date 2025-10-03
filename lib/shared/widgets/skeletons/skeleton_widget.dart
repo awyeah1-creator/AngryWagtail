@@ -184,19 +184,19 @@ class SkeletonCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               if (showAvatar) ...[
-                Row(
+                const Row(
                   children: [
-                    const SkeletonAvatar(size: 40),
-                    const SizedBox(width: 12),
+                    SkeletonAvatar(size: 40),
+                    SizedBox(width: 12),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const SkeletonWidget(
+                          SkeletonWidget(
                             width: 150,
                             height: 16,
                           ),
-                          const SizedBox(height: 4),
+                          SizedBox(height: 4),
                           SkeletonWidget(
                             width: 100,
                             height: 14,
@@ -217,7 +217,7 @@ class SkeletonCard extends StatelessWidget {
               ),
               if (showActions) ...[
                 const SizedBox(height: 16),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     SkeletonWidget(
@@ -225,7 +225,7 @@ class SkeletonCard extends StatelessWidget {
                       height: 32,
                       borderRadius: 16,
                     ),
-                    const SizedBox(width: 8),
+                    SizedBox(width: 8),
                     SkeletonWidget(
                       width: 60,
                       height: 32,

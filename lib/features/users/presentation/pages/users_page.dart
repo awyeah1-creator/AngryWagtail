@@ -82,7 +82,7 @@ class _UsersPageState extends ConsumerState<UsersPage> {
                     icon: const Icon(Icons.login),
                     label: Text(AppLocalizations.of(context).loginToAdd),
                     style: FilledButton.styleFrom(
-                      backgroundColor: Theme.of(context).colorScheme.surfaceVariant,
+                      backgroundColor: Theme.of(context).colorScheme.surfaceContainerHighest,
                       foregroundColor: Theme.of(context).colorScheme.onSurfaceVariant,
                     ),
                   ),

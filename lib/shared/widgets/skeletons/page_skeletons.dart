@@ -41,15 +41,15 @@ class DashboardSkeleton extends StatelessWidget {
           ),
           const SizedBox(height: 24),
           // Charts Row
-          Row(
+          const Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Expanded(
+              Expanded(
                 flex: 2,
                 child: SkeletonCard(height: 400),
               ),
-              const SizedBox(width: 16),
-              const Expanded(
+              SizedBox(width: 16),
+              Expanded(
                 child: SkeletonCard(height: 400),
               ),
             ],
@@ -125,11 +125,11 @@ class UserListSkeleton extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       itemCount: itemCount,
       itemBuilder: (context, index) {
-        return Card(
-          margin: const EdgeInsets.only(bottom: 8),
+        return const Card(
+          margin: EdgeInsets.only(bottom: 8),
           child: SkeletonListTile(
             showTrailing: true,
-            contentPadding: const EdgeInsets.all(16),
+            contentPadding: EdgeInsets.all(16),
           ),
         );
       },
@@ -152,34 +152,34 @@ class NotificationListSkeleton extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       itemCount: itemCount,
       itemBuilder: (context, index) {
-        return Card(
-          margin: const EdgeInsets.only(bottom: 12),
+        return const Card(
+          margin: EdgeInsets.only(bottom: 12),
           child: Padding(
-            padding: const EdgeInsets.all(16),
+            padding: EdgeInsets.all(16),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const SkeletonWidget(
+                SkeletonWidget(
                   width: 40,
                   height: 40,
                   shape: BoxShape.circle,
                 ),
-                const SizedBox(width: 16),
+                SizedBox(width: 16),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const SkeletonWidget(
+                      SkeletonWidget(
                         width: 200,
                         height: 16,
                       ),
-                      const SizedBox(height: 8),
-                      const SkeletonText(
+                      SizedBox(height: 8),
+                      SkeletonText(
                         lines: 2,
                         height: 14,
                       ),
-                      const SizedBox(height: 8),
-                      const SkeletonWidget(
+                      SizedBox(height: 8),
+                      SkeletonWidget(
                         width: 100,
                         height: 12,
                       ),
@@ -203,18 +203,18 @@ class SettingsSkeleton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       padding: const EdgeInsets.all(16),
-      children: [
-        const _SettingsSectionSkeleton(
+      children: const [
+        _SettingsSectionSkeleton(
           title: true,
           itemCount: 3,
         ),
-        const SizedBox(height: 24),
-        const _SettingsSectionSkeleton(
+        SizedBox(height: 24),
+        _SettingsSectionSkeleton(
           title: true,
           itemCount: 4,
         ),
-        const SizedBox(height: 24),
-        const _SettingsSectionSkeleton(
+        SizedBox(height: 24),
+        _SettingsSectionSkeleton(
           title: true,
           itemCount: 2,
         ),
@@ -246,16 +246,16 @@ class _SettingsSectionSkeleton extends StatelessWidget {
         ],
         ...List.generate(
           itemCount,
-          (index) => Padding(
-            padding: const EdgeInsets.only(bottom: 12),
+          (index) => const Padding(
+            padding: EdgeInsets.only(bottom: 12),
             child: Row(
               children: [
-                const SkeletonWidget(
+                SkeletonWidget(
                   width: 24,
                   height: 24,
                 ),
-                const SizedBox(width: 16),
-                const Expanded(
+                SizedBox(width: 16),
+                Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -271,7 +271,7 @@ class _SettingsSectionSkeleton extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SkeletonWidget(
+                SkeletonWidget(
                   width: 48,
                   height: 24,
                   borderRadius: 12,
@@ -314,7 +314,7 @@ class ProfileSkeleton extends StatelessWidget {
               const SizedBox(height: 24),
               _buildInfoSection(),
               const SizedBox(height: 32),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SkeletonWidget(
@@ -322,7 +322,7 @@ class ProfileSkeleton extends StatelessWidget {
                     height: 40,
                     borderRadius: 20,
                   ),
-                  const SizedBox(width: 16),
+                  SizedBox(width: 16),
                   SkeletonWidget(
                     width: 120,
                     height: 40,
@@ -344,16 +344,16 @@ class ProfileSkeleton extends StatelessWidget {
         child: Column(
           children: List.generate(
             3,
-            (index) => Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8),
+            (index) => const Padding(
+              padding: EdgeInsets.symmetric(vertical: 8),
               child: Row(
                 children: [
-                  const SkeletonWidget(
+                  SkeletonWidget(
                     width: 24,
                     height: 24,
                   ),
-                  const SizedBox(width: 16),
-                  const Expanded(
+                  SizedBox(width: 16),
+                  Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [

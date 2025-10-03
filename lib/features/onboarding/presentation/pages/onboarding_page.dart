@@ -17,14 +17,14 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
   int _currentPage = 0;
   
   final List<OnboardingStepData> _steps = [
-    OnboardingStepData(
+    const OnboardingStepData(
       title: 'Welcome to Angry Wagtail',
       description: 'A production-ready Flutter template with Material 3 design, '
                   'state management, and essential features to kickstart your next project.',
       image: Icons.rocket_launch,
       color: Colors.blue,
     ),
-    OnboardingStepData(
+    const OnboardingStepData(
       title: 'Material 3 Design',
       description: 'Beautiful, adaptive UI components that follow the latest '
                   'Material Design guidelines. Includes dynamic theming with '
@@ -32,7 +32,7 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
       image: Icons.palette,
       color: Colors.purple,
     ),
-    OnboardingStepData(
+    const OnboardingStepData(
       title: 'Responsive Navigation',
       description: 'Seamlessly adapts between mobile and desktop layouts. '
                   'Bottom navigation for mobile, navigation rail for desktop, '
@@ -40,14 +40,14 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
       image: Icons.devices,
       color: Colors.teal,
     ),
-    OnboardingStepData(
+    const OnboardingStepData(
       title: 'State Management',
       description: 'Built with Riverpod for robust, type-safe state management. '
                   'Includes examples of providers, state notifiers, and async data handling.',
       image: Icons.settings_input_component,
       color: Colors.orange,
     ),
-    OnboardingStepData(
+    const OnboardingStepData(
       title: 'Ready-to-Use Wagtail Features',
       description: 'Authentication flows, user management, dashboard with charts, '
                   'notifications, search functionality, and more. Everything you need '

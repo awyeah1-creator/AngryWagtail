@@ -276,22 +276,22 @@ class _UIShowcasePageState extends ConsumerState<UIShowcasePage> {
                 children: [
                   _buildSubsection(
                     AppLocalizations.of(context).sizes,
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        const CustomAvatar(
+                        CustomAvatar(
                           name: 'John Doe',
                           size: AvatarSize.small,
                         ),
-                        const CustomAvatar(
+                        CustomAvatar(
                           name: 'Jane Smith',
                           size: AvatarSize.medium,
                         ),
-                        const CustomAvatar(
+                        CustomAvatar(
                           name: 'Bob Johnson',
                           size: AvatarSize.large,
                         ),
-                        const CustomAvatar(
+                        CustomAvatar(
                           name: 'Alice Brown',
                           size: AvatarSize.extraLarge,
                         ),

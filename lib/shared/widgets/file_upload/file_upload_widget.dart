@@ -373,7 +373,7 @@ class DocumentUploadWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return FileUploadWidget(
       type: FileUploadType.document,
-      allowedExtensions: ['pdf', 'doc', 'docx', 'txt', 'rtf'],
+      allowedExtensions: const ['pdf', 'doc', 'docx', 'txt', 'rtf'],
       multiple: multiple,
       maxSizeInBytes: maxSizeInBytes,
       onFilesSelected: onDocumentsSelected,

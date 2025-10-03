@@ -442,27 +442,27 @@ class _FormsExamplePageState extends ConsumerState<FormsExamplePage> {
   void _validateUserForm() {
     if (!_userFormKey.currentState!.validate()) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Please fix the errors in the form')),
+        const SnackBar(content: Text('Please fix the errors in the form')),
       );
       return;
     }
     
     if (!_agreeToTerms) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Please agree to the terms and conditions')),
+        const SnackBar(content: Text('Please agree to the terms and conditions')),
       );
       return;
     }
     
     if (_selectedInterests.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Please select at least one interest')),
+        const SnackBar(content: Text('Please select at least one interest')),
       );
       return;
     }
     
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
+      const SnackBar(
         content: Text('Registration successful!'),
         backgroundColor: Colors.green,
       ),
@@ -472,13 +472,13 @@ class _FormsExamplePageState extends ConsumerState<FormsExamplePage> {
   void _validatePaymentForm() {
     if (!_paymentFormKey.currentState!.validate()) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Please fix the errors in the form')),
+        const SnackBar(content: Text('Please fix the errors in the form')),
       );
       return;
     }
     
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
+      const SnackBar(
         content: Text('Payment processed successfully!'),
         backgroundColor: Colors.green,
       ),
@@ -488,7 +488,7 @@ class _FormsExamplePageState extends ConsumerState<FormsExamplePage> {
   void _validateFeedbackForm() {
     if (!_feedbackFormKey.currentState!.validate()) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Please fix the errors in the form')),
+        const SnackBar(content: Text('Please fix the errors in the form')),
       );
       return;
     }
