@@ -42,8 +42,10 @@ class HomePage extends ConsumerWidget {
               children: [
                 GestureDetector(
                   onTap: () async {
+                    final cache = AudioCache(prefix: 'algbra-assets/audio/');
+                    final file = await cache.load('wagtail-chirp4.mp3');
                     final player = AudioPlayer();
-                    await player.play(AssetSource('algbra-assets/audio/wagtail-chirp4.mp3'));
+                    await player.play(DeviceFileSource(file.path));
                   },
                   child: Image.asset(
                     'algbra-assets/icons/wagtail_icon.png',
