@@ -9,22 +9,22 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => 'Wagtail Starter';
+  String get appTitle => 'Flutter Starter';
 
   @override
-  String get welcomeMessage => 'Welcome to Wagtail Starter';
+  String get welcomeMessage => 'Welcome to Flutter Starter';
 
   @override
   String get home => 'Home';
 
   @override
-  String get dashboard => 'Wagtail';
+  String get dashboard => 'Dashboard';
 
   @override
-  String get users => 'Wagtail';
+  String get users => 'Users';
 
   @override
-  String get notifications => 'Wagtail';
+  String get notifications => 'Notifications';
 
   @override
   String get settings => 'Settings';
@@ -150,17 +150,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String get uploadError => 'Upload failed';
 
   @override
-  String get welcomeTitle => 'Welcome to Wagtail Starter';
+  String get welcomeTitle => 'Welcome to Flutter Starter';
 
   @override
   String get welcomeSubtitle =>
-      'A Wagtail starter template with authentication,\\ntheming, and responsive navigation';
+      'A Material 3 starter template with authentication,\\ntheming, and responsive navigation';
 
   @override
-  String get uiComponents => 'Wagtail Components';
+  String get uiComponents => 'UI Components';
 
   @override
-  String get loadingSkeletons => 'Loading Wagtails';
+  String get loadingSkeletons => 'Loading Skeletons';
 
   @override
   String get errorHandling => 'Error Handling';
@@ -169,7 +169,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get features => 'Features';
 
   @override
-  String get material3Design => 'Wagtail 3 Design';
+  String get material3Design => 'Material 3 Design';
 
   @override
   String get material3Description =>
