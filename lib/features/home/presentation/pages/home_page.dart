@@ -4,6 +4,8 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:go_router/go_router.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../../../features/auth/presentation/providers/auth_provider.dart';
+import 'package:audioplayers/audioplayers.dart';
+
 
 class HomePage extends ConsumerWidget {
   const HomePage({super.key});
@@ -38,11 +40,17 @@ class HomePage extends ConsumerWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset(
-                  'algbra-assets/icons/wagtail_icon.png',
-                  width: 80,
-                  height: 80,
-                ).animate().scale(duration: 600.ms, curve: Curves.easeOutBack),
+                GestureDetector(
+                  onTap: () async {
+                    final player = AudioPlayer();
+                    await player.play(AssetSource('algbra-assets/audio/wagtail-chirp4.mp3'));
+                  },
+                  child: Image.asset(
+                    'algbra-assets/icons/wagtail_icon.png',
+                    width: 80,
+                    height: 80,
+                  ).animate().scale(duration: 600.ms, curve: Curves.easeOutBack),
+                ),
                 const SizedBox(height: 24),
                 Text(
                   l10n.welcomeTitle,

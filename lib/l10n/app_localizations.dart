@@ -385,7 +385,7 @@ abstract class AppLocalizations {
   /// Welcome title on home page
   ///
   /// In en, this message translates to:
-  /// **'Welcome to Flutter Starter'**
+  /// **'Welcome to Wagtail Starter'**
   String get welcomeTitle;
 
   /// Welcome subtitle describing the app
