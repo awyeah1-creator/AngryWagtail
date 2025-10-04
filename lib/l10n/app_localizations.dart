@@ -103,7 +103,7 @@ abstract class AppLocalizations {
   /// The title of the application
   ///
   /// In en, this message translates to:
-  /// **'Flutter Starter'**
+  /// **'Wagtail Starter'**
   String get appTitle;
 
   /// Welcome message displayed on home page
