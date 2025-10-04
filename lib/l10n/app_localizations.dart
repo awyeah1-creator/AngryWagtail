@@ -103,13 +103,13 @@ abstract class AppLocalizations {
   /// The title of the application
   ///
   /// In en, this message translates to:
-  /// **'Flutter Starter'**
+  /// **'Wagtail Starter'**
   String get appTitle;
 
   /// Welcome message displayed on home page
   ///
   /// In en, this message translates to:
-  /// **'Welcome to Flutter Starter'**
+  /// **'Welcome to Wagtail Starter'**
   String get welcomeMessage;
 
   /// Home navigation label
@@ -121,19 +121,19 @@ abstract class AppLocalizations {
   /// Dashboard navigation label
   ///
   /// In en, this message translates to:
-  /// **'Dashboard'**
+  /// **'Wagtail'**
   String get dashboard;
 
   /// Users navigation label
   ///
   /// In en, this message translates to:
-  /// **'Users'**
+  /// **'Wagtail'**
   String get users;
 
   /// Notifications navigation label
   ///
   /// In en, this message translates to:
-  /// **'Notifications'**
+  /// **'Wagtail'**
   String get notifications;
 
   /// Settings navigation label
@@ -385,25 +385,25 @@ abstract class AppLocalizations {
   /// Welcome title on home page
   ///
   /// In en, this message translates to:
-  /// **'Welcome to Flutter Starter'**
+  /// **'Welcome to Wagtail Starter'**
   String get welcomeTitle;
 
   /// Welcome subtitle describing the app
   ///
   /// In en, this message translates to:
-  /// **'A Material 3 starter template with authentication,\\ntheming, and responsive navigation'**
+  /// **'A Wagtail starter template with authentication,\\ntheming, and responsive navigation'**
   String get welcomeSubtitle;
 
   /// UI Components showcase button
   ///
   /// In en, this message translates to:
-  /// **'UI Components'**
+  /// **'Wagtail Components'**
   String get uiComponents;
 
   /// Loading skeletons showcase button
   ///
   /// In en, this message translates to:
-  /// **'Loading Skeletons'**
+  /// **'Loading Wagtails'**
   String get loadingSkeletons;
 
   /// Error handling showcase button
@@ -421,7 +421,7 @@ abstract class AppLocalizations {
   /// Material 3 design feature title
   ///
   /// In en, this message translates to:
-  /// **'Material 3 Design'**
+  /// **'Wagtail 3 Design'**
   String get material3Design;
 
   /// Material 3 design feature description

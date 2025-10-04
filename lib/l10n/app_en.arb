@@ -1,11 +1,11 @@
 {
   "@@locale": "en",
-  "appTitle": "Flutter Starter",
+  "appTitle": "Wagtail Starter",
   "@appTitle": {
     "description": "The title of the application"
   },
   
-  "welcomeMessage": "Welcome to Flutter Starter",
+  "welcomeMessage": "Welcome to Wagtail Starter",
   "@welcomeMessage": {
     "description": "Welcome message displayed on home page"
   },
@@ -15,17 +15,17 @@
     "description": "Home navigation label"
   },
   
-  "dashboard": "Dashboard",
+  "dashboard": "Wagtail",
   "@dashboard": {
     "description": "Dashboard navigation label"
   },
   
-  "users": "Users",
+  "users": "Wagtail",
   "@users": {
     "description": "Users navigation label"
   },
   
-  "notifications": "Notifications",
+  "notifications": "Wagtail",
   "@notifications": {
     "description": "Notifications navigation label"
   },
@@ -235,22 +235,22 @@
     "description": "File upload error message"
   },
   
-  "welcomeTitle": "Welcome to Flutter Starter",
+  "welcomeTitle": "Welcome to Wagtail Starter",
   "@welcomeTitle": {
     "description": "Welcome title on home page"
   },
   
-  "welcomeSubtitle": "A Material 3 starter template with authentication,\\ntheming, and responsive navigation",
+  "welcomeSubtitle": "A Wagtail starter template with authentication,\\ntheming, and responsive navigation",
   "@welcomeSubtitle": {
     "description": "Welcome subtitle describing the app"
   },
   
-  "uiComponents": "UI Components",
+  "uiComponents": "Wagtail Components",
   "@uiComponents": {
     "description": "UI Components showcase button"
   },
   
-  "loadingSkeletons": "Loading Skeletons",
+  "loadingSkeletons": "Loading Wagtails",
   "@loadingSkeletons": {
     "description": "Loading skeletons showcase button"
   },
@@ -265,7 +265,7 @@
     "description": "Features section title"
   },
   
-  "material3Design": "Material 3 Design",
+  "material3Design": "Wagtail 3 Design",
   "@material3Design": {
     "description": "Material 3 design feature title"
   },
