@@ -65,6 +65,7 @@ dependencies:
   freezed_annotation: ^2.4.0
   intl: ^0.20.2
   audioplayers: ^6.5.1
+  video_player: ^2.8.1
 
 dev_dependencies:
   flutter_test:
@@ -86,3 +87,4 @@ flutter:
   assets:
     - algbra-assets/icons/wagtail_icon.png
     - algbra-assets/audio/wagtail-chirp4.mp3
+    - algbra-assets/video/JCloadingscreen.mp4
