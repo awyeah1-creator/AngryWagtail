@@ -235,7 +235,7 @@
     "description": "File upload error message"
   },
   
-  "welcomeTitle": "Welcome to Flutter Starter",
+  "welcomeTitle": "Welcome to Wagtail Starter",
   "@welcomeTitle": {
     "description": "Welcome title on home page"
   },

@@ -150,7 +150,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get uploadError => 'Upload failed';
 
   @override
-  String get welcomeTitle => 'Welcome to Flutter Starter';
+  String get welcomeTitle => 'Welcome to Wagtail Starter';
 
   @override
   String get welcomeSubtitle =>
